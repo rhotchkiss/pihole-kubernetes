@@ -118,13 +118,13 @@ serviceWeb:
     nodePort: ""
 
   # -- `spec.type` for the web interface Service
-  type: ClusterIP
+  type: LoadBalancer
 
   # -- `spec.externalTrafficPolicy` for the web interface Service
   externalTrafficPolicy: Local
 
   # -- A fixed `spec.loadBalancerIP` for the web interface Service
-  loadBalancerIP: ""
+  loadBalancerIP: "192.168.1.52"
   # -- A fixed `spec.loadBalancerIP` for the IPv6 web interface Service
   loadBalancerIPv6: ""
 
